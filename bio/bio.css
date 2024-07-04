@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+    margin: 20px;
+    padding: 20px;
+}
+main {
+    width: 100%;
+    display: inline;
+}
+main h2 {
+    font-size: 25px;
+    color: rgb(123, 2, 121);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+div {
+    display: flex;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    width: 500px;
+    justify-content: space-between;
+}
+article h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+article li {
+    display: inline-block;
+    line-height: 35px;
+}
+
+input {
+    border: 1px solid #4aa4b6;
+    border-radius: 25px;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(216, 241, 251);
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(179, 247, 180);
+    width: 100%;
+    margin: 35px 0;
+}
+footer p {
+    word-spacing: 45px;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(198, 4, 20);
+    font-weight: bold;
+}
+span {
+    color: rgb(4, 38, 149);
+    word-spacing: 50px;
+    margin: 5px;
+    margin-left: 40px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    div, article {
+        flex-direction: column;
+    }
+}

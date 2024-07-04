@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    background-color: rgb(237, 252, 182);
+    border: 2.5px solid rgb(3, 31, 110);
+    color: blueviolet;
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    margin: 25px;
+    /* display: flex; */
+}
+
+.form h2 {
+    font-size: 30px;
+    color: brown;
+    text-shadow: 2px 3px 3px rgb(4, 39, 157);
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.check {
+    margin: 5px 0 15px 0;
+    color: black;
+    text-align: justify;
+    display: flex;
+}
+
+.form label {
+    margin: 0 5px;
+    color: rgb(3, 118, 43);
+    font-weight: bold;
+}
+
+.form input {
+    display: inline-flex;
+    width: 65%;
+    height: auto;
+    border: 1.5px solid #024e76;
+    border-radius: 7px 0 7px 0;
+    padding: 5px 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(234, 229, 229);
+}
+
+.btn {
+    color: #fc3845;
+    background-color: #dfcb37;
+    border: 3px solid rgb(82, 12, 152);
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.btn:hover {
+    color: aliceblue;
+    background-color: rgb(5, 184, 56);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 485px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}

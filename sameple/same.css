@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: space-around; */
+}
+
+/* .container:first-child {
+    margin: 0;
+    padding: 0;
+} */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section p {
+    font-size: 20px;
+    border: 3.5px solid green;
+    width: 400px;
+    height: auto;
+    /* margin: 20px; */
+    padding: 20px;
+}
+
+@media screen and (max-width: 485px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
